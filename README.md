@@ -201,4 +201,19 @@ void doEncoder1() {
 > Can be used to play Unnamed SDVX Clone (USC)
 1. Gather all the components which include: 2x rotary encoders, 7x pushbuttons with soldering legs, wires, soldering iron, solder, leonardo ardiuno, 3d printed case and a few nuts which would have been included with the components
 
-2. 
+
+
+## Build custom PCB in KiCad
+> Theoretically could be used instead of a leonardo to play USC with the current code
+1. First open the KiCad Schematic Editor and add the ATmega32U4-A microcontroller using the add symbol button
+<img width="1280" alt="fig #6" src="https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/381e913f-de39-4018-9505-ee0254e582cf">
+
+2. Now add all the components we'll be using which are 7x "Conn_01x02_Socket", 2x "Conn_01x04_Socket", 1x "Conn_01x06_Socket", 2x "R" and 1x "GND". Note the placing is important.
+![image](https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/92f539ca-ab18-4a2a-ab17-9179d0197352)
+
+3. Now connect all the 01x02 connectors on pin 2 to the microcontroller GND pin and on pin 1 starting from J1 - j7: 26, 25, 38, 39, 40, 41 and 1, also connect the microcontroller GND pin to the common GNF symbol. Furthermore, connect the J8 01x04 connector from pin 1 - 4: 15, 14, 21 and 18. Also connect the J9 01x04 from 1 - 4 to: 15, 14, 20 and 19. Now connect the J10 from pins 1 - 6 to: 14, 3, 4, 15, to one side of R1 and then from the otherside to 15 and the same for pin 6 but with R2.
+![image](https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/30bac342-1a78-4ee6-a09f-230ded8b55d7)
+
+
+
+
