@@ -199,3 +199,6 @@ void doEncoder1() {
 
 ## Build controller using 3d printed components
 > Can be used to play Unnamed SDVX Clone (USC)
+1. Gather all the components which include: 2x rotary encoders, 7x pushbuttons with soldering legs, wires, soldering iron, solder, leonardo ardiuno, 3d printed case and a few nuts which would have been included with the components
+
+2. 
