@@ -243,7 +243,7 @@ Congratulations, you've created a SDVX PCB, you can view it in the 3d viewer to 
 >How did your preliminary research influence and refine the initial concept of your recipe; were there any unexpected findings that led you to adjust or rethink your original idea?
 
 When I first started researching what project to do I initially thought "What if I made a barcode scanner, but it read RGB values and not just BW?" I thought this would save space on the barcode but after doing some concept code which took me over 6 hours to complete I realised It was extremely impractical, the RGB barcode would have to be very long even for the most simple URLs
-![[Pasted image 20240323124413.png]]()
+![[Pasted image 20240323124413.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323124413.png)
 and with the current way I was going to implement it which was to move the scanner over a strip of colours until a black strip was reached would be very impractical. Then I thought of some hobbies I was passionate of and I thought of making a rhythm game controller, there were quite a few to choose from like a IIDX controller, Chunithm controller and if I wanted an extremely hard challenge, a maimai controller or Ongeki controller, but I ended up choosing one of the more simple ones as this was my first foray into designing a rhythm controller from scratch.
 
 IIDX controller
