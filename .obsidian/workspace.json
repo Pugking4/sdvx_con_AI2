@@ -11,9 +11,11 @@
             "id": "1dd52a5e1dc9ff4f",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Pasted image 20240323122520.png"
+                "file": "README.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240323122520.png",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240323122520.png",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240323122520.png"
+                "file": "README.md"
               }
             }
           }
@@ -145,8 +147,8 @@
   },
   "active": "1dd52a5e1dc9ff4f",
   "lastOpenFiles": [
-    "README.md",
     "Pasted image 20240323122520.png",
+    "README.md",
     "Pasted image 20240323122509.png",
     "Pasted image 20240323122352.png",
     "Pasted image 20240323122142.png",
