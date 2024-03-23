@@ -218,6 +218,7 @@ void doEncoder1() {
 ![[Pasted image 20240323120149.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120149.png)
 
 5. Now open the PCB editor and select the Edge cuts layers and then click the draw rectangle tool, draw a rectangle in the dimensions of 54mm x 47mm, also select from tools in the top toolbar "Update PCB from schematic" to place all your components on the PCB try to position them to be in the middle.
+
 ![[Pasted image 20240323120639.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120639.png)
 ![[Pasted image 20240323120748.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120748.png)
 
