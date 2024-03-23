@@ -215,24 +215,24 @@ void doEncoder1() {
 ![image](https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/30bac342-1a78-4ee6-a09f-230ded8b55d7)
 
 4. Click the tools dropdown at the top toolbar and select assign footprints, for the 01x02 connectors assign "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical", for the 01x04 assign "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical", for the 01x06 assign "Connector_JST:JST_PH_B6B-PH-SM4-TB_1x06-1MP_P2.00mm_Vertical", for the R assign "Resistor_SMD:R_0603_1608Metric" and lastly if KiCad has not already auto assigned the microcontroller a footprint assign it "Package_QFP:TQFP-44_10x10mm_P0.8mm".
-![[Pasted image 20240323120149.png]]
+![[Pasted image 20240323120149.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120149.png)
 
 5. Now open the PCB editor and select the Edge cuts layers and then click the draw rectangle tool, draw a rectangle in the dimensions of 54mm x 47mm, also select from tools in the top toolbar "Update PCB from schematic" to place all your components on the PCB try to position them to be in the middle.
-![[Pasted image 20240323120639.png]]
-![[Pasted image 20240323120748.png]]
+![[Pasted image 20240323120639.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120639.png)
+![[Pasted image 20240323120748.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120748.png)
 
 6. Double click to select the B.Cu layer and then select the "Add filled zone" tool, draw a rectangle about 1mm away from the border of the edge of the PCB, when you add the copper pour make sure to select the GND net as this will guide the ratlines (the blue lines) to the GND lower plate.
-![[Pasted image 20240323121155.png]]
+![[Pasted image 20240323121155.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323121155.png)
 
 7. Now organise the components according to the diagram below, make sure to pay attension to the reference number (eg; J7) when placing them.
-![[Pasted image 20240323121745.png]]
+![[Pasted image 20240323121745.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323121745.png)
 
 8. Select the "Add vias" tool from the right toolbar and place vias infront of any pin that says GND, they should be infront, not on the pin, then connect all the GND pins to the vias and for the 01x06 connect both the gnd pins to each resistor and then to the via as seen in the diagram below.
-![[Pasted image 20240323122142.png]]
+![[Pasted image 20240323122142.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323122142.png)
 
 9. Now connect the rest of the pins to their respective microcontroller pin, if you have trouble finding routes to the pin then use my diagram as a reference. (Disregard the ratlines in the centre microcontroller)
-![[Pasted image 20240323122352.png]]
+![[Pasted image 20240323122352.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323122352.png)
 
 Congratulations, you've created a SDVX PCB, you can view it in the 3d viewer to get a better look at it.
-![[Pasted image 20240323122509.png]]
-![[Pasted image 20240323122520.png]]
+![[Pasted image 20240323122509.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323122509.png)
+![[Pasted image 20240323122520.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323122520.png)
