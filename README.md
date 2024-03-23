@@ -222,16 +222,18 @@ void doEncoder1() {
 ![[Pasted image 20240323120639.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120639.png)
 ![[Pasted image 20240323120748.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323120748.png)
 
-6. Double click to select the B.Cu layer and then select the "Add filled zone" tool, draw a rectangle about 1mm away from the border of the edge of the PCB, when you add the copper pour make sure to select the GND net as this will guide the ratlines (the blue lines) to the GND lower plate.
+6. Double click to select the B.Cu layer and then select the "Add filled zone" tool, draw a rectangle about 1mm away from the border of the edge of the PCB, when you add the copper pour make sure to select the GND net as this will guide the ratlines (the blue lines) to the GND lower plate. Also make sure to right click and select "Fill all zones" to actually fill it with copper.
 ![[Pasted image 20240323121155.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323121155.png)
+![image](https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/6fb28c19-9688-4d71-ba23-f90ed7b02820)
 
-7. Now organise the components according to the diagram below, make sure to pay attension to the reference number (eg; J7) when placing them.
+
+8. Now organise the components according to the diagram below, make sure to pay attension to the reference number (eg; J7) when placing them.
 ![[Pasted image 20240323121745.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323121745.png)
 
-8. Select the "Add vias" tool from the right toolbar and place vias infront of any pin that says GND, they should be infront, not on the pin, then connect all the GND pins to the vias and for the 01x06 connect both the gnd pins to each resistor and then to the via as seen in the diagram below.
+9. Select the "Add vias" tool from the right toolbar and place vias infront of any pin that says GND, they should be infront, not on the pin, then connect all the GND pins to the vias and for the 01x06 connect both the gnd pins to each resistor and then to the via as seen in the diagram below.
 ![[Pasted image 20240323122142.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323122142.png)
 
-9. Now connect the rest of the pins to their respective microcontroller pin, if you have trouble finding routes to the pin then use my diagram as a reference. (Disregard the ratlines in the centre microcontroller)
+10. Now connect the rest of the pins to their respective microcontroller pin, if you have trouble finding routes to the pin then use my diagram as a reference. (Disregard the ratlines in the centre microcontroller)
 ![[Pasted image 20240323122352.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323122352.png)
 
 Congratulations, you've created a SDVX PCB, you can view it in the 3d viewer to get a better look at it.
