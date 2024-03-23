@@ -1,0 +1,160 @@
+{
+  "main": {
+    "id": "afe04dd43ff13756",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb25d78db22ee0cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1dd52a5e1dc9ff4f",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Pasted image 20240323122520.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "2b193a0e5d2b5688",
+    "type": "split",
+    "children": [
+      {
+        "id": "d74b0cf77f331523",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ede792e11002b88",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "756adf87615806a6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "87341bec91e7d7f5",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "17635d25f266f5a2",
+    "type": "split",
+    "children": [
+      {
+        "id": "b9c14a5eeb19b52f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6bee9347f82fd56c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Pasted image 20240323122520.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "fd54df714e6454d6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Pasted image 20240323122520.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "949f7322b41540c4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ac306f0d941b9e98",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Pasted image 20240323122520.png"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "1dd52a5e1dc9ff4f",
+  "lastOpenFiles": [
+    "README.md",
+    "Pasted image 20240323122520.png",
+    "Pasted image 20240323122509.png",
+    "Pasted image 20240323122352.png",
+    "Pasted image 20240323122142.png",
+    "Pasted image 20240323121745.png",
+    "Pasted image 20240323121155.png",
+    "Pasted image 20240323120748.png",
+    "Pasted image 20240323120149.png",
+    "Pasted image 20240323120639.png",
+    "Pasted image 20240323120145.png"
+  ]
+}

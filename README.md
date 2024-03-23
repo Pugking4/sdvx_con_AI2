@@ -6,7 +6,7 @@
 ![fig #1](https://github.com/Pugking4/sdvx_con_AI2/blob/main/wokwi_1.png)
 ![fig #2](https://github.com/Pugking4/sdvx_con_AI2/blob/main/sdvx_button_example.jpg)
 
-2. Add a breadboard and connect the ardiuno's 5V and GND to their associated lower rails, then which ever encoder you want to be VOL-L CLK pin to digital pin 0 (assume all pins from here to be digital), DT to pin 7, SW can be left alone, + (power) to the 5V rail on the breadboard and the GND to the GND rail on the breadboard (ignore the wiring on the top of the breadboard)
+2. Add a breadboard and connect the Arduino's 5V and GND to their associated lower rails, then which ever encoder you want to be VOL-L CLK pin to digital pin 0 (assume all pins from here to be digital), DT to pin 7, SW can be left alone, + (power) to the 5V rail on the breadboard and the GND to the GND rail on the breadboard (ignore the wiring on the top of the breadboard)
 ![fig #3](https://github.com/Pugking4/sdvx_con_AI2/blob/main/wokwi_2.png)
 
 3. Repeat for VOL-R encoder with the pin assignments of CLK to 3, DT to 5, + (power) to bb (breadboard) power rail and GND to bb GND rail.
@@ -211,9 +211,28 @@ void doEncoder1() {
 2. Now add all the components we'll be using which are 7x "Conn_01x02_Socket", 2x "Conn_01x04_Socket", 1x "Conn_01x06_Socket", 2x "R" and 1x "GND". Note the placing is important.
 ![image](https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/92f539ca-ab18-4a2a-ab17-9179d0197352)
 
-3. Now connect all the 01x02 connectors on pin 2 to the microcontroller GND pin and on pin 1 starting from J1 - j7: 26, 25, 38, 39, 40, 41 and 1, also connect the microcontroller GND pin to the common GNF symbol. Furthermore, connect the J8 01x04 connector from pin 1 - 4: 15, 14, 21 and 18. Also connect the J9 01x04 from 1 - 4 to: 15, 14, 20 and 19. Now connect the J10 from pins 1 - 6 to: 14, 3, 4, 15, to one side of R1 and then from the otherside to 15 and the same for pin 6 but with R2.
+3. Now connect all the 01x02 connectors on pin 2 to the microcontroller GND pin and on pin 1 starting from J1 - j7: 26, 25, 38, 39, 40, 41 and 1, also connect the microcontroller GND pin to the common GNF symbol. Furthermore, connect the J8 01x04 connector from pin 1 - 4: 15, 14, 21 and 18. Also connect the J9 01x04 from 1 - 4 to: 15, 14, 20 and 19. Now connect the J10 from pins 1 - 6 to: 14, 3, 4, 15, to one side of R1 and then from the other side to 15 and the same for pin 6 but with R2.
 ![image](https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/30bac342-1a78-4ee6-a09f-230ded8b55d7)
 
+4. Click the tools dropdown at the top toolbar and select assign footprints, for the 01x02 connectors assign "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical", for the 01x04 assign "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical", for the 01x06 assign "Connector_JST:JST_PH_B6B-PH-SM4-TB_1x06-1MP_P2.00mm_Vertical", for the R assign "Resistor_SMD:R_0603_1608Metric" and lastly if KiCad has not already auto assigned the microcontroller a footprint assign it "Package_QFP:TQFP-44_10x10mm_P0.8mm".
+![[Pasted image 20240323120149.png]]
 
+5. Now open the PCB editor and select the Edge cuts layers and then click the draw rectangle tool, draw a rectangle in the dimensions of 54mm x 47mm, also select from tools in the top toolbar "Update PCB from schematic" to place all your components on the PCB try to position them to be in the middle.
+![[Pasted image 20240323120639.png]]
+![[Pasted image 20240323120748.png]]
 
+6. Double click to select the B.Cu layer and then select the "Add filled zone" tool, draw a rectangle about 1mm away from the border of the edge of the PCB, when you add the copper pour make sure to select the GND net as this will guide the ratlines (the blue lines) to the GND lower plate.
+![[Pasted image 20240323121155.png]]
 
+7. Now organise the components according to the diagram below, make sure to pay attension to the reference number (eg; J7) when placing them.
+![[Pasted image 20240323121745.png]]
+
+8. Select the "Add vias" tool from the right toolbar and place vias infront of any pin that says GND, they should be infront, not on the pin, then connect all the GND pins to the vias and for the 01x06 connect both the gnd pins to each resistor and then to the via as seen in the diagram below.
+![[Pasted image 20240323122142.png]]
+
+9. Now connect the rest of the pins to their respective microcontroller pin, if you have trouble finding routes to the pin then use my diagram as a reference. (Disregard the ratlines in the centre microcontroller)
+![[Pasted image 20240323122352.png]]
+
+Congratulations, you've created a SDVX PCB, you can view it in the 3d viewer to get a better look at it.
+![[Pasted image 20240323122509.png]]
+![[Pasted image 20240323122520.png]]
