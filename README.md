@@ -243,34 +243,34 @@ Congratulations, you've created a SDVX PCB, you can view it in the 3d viewer to 
 >How did your preliminary research influence and refine the initial concept of your recipe; were there any unexpected findings that led you to adjust or rethink your original idea?
 
 When I first started researching what project to do I initially thought "What if I made a barcode scanner, but it read RGB values and not just BW?" I thought this would save space on the barcode but after doing some concept code which took me over 6 hours to complete I realised It was extremely impractical, the RGB barcode would have to be very long even for the most simple URLs
-![[Pasted image 20240323124413.png]]
+![[Pasted image 20240323124413.png]]()
 and with the current way I was going to implement it which was to move the scanner over a strip of colours until a black strip was reached would be very impractical. Then I thought of some hobbies I was passionate of and I thought of making a rhythm game controller, there were quite a few to choose from like a IIDX controller, Chunithm controller and if I wanted an extremely hard challenge, a maimai controller or Ongeki controller, but I ended up choosing one of the more simple ones as this was my first foray into designing a rhythm controller from scratch.
 
 IIDX controller
-![[pic003.png]]
+![[pic003.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/pic003.png)
 Chunithm controller
-![[S991d3176dec447c79dd32a83287477ebh.jpg_640x640Q90.jpg_.webp]]
+![[S991d3176dec447c79dd32a83287477ebh.jpg_640x640Q90.jpg_.webp]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/S991d3176dec447c79dd32a83287477ebh.jpg_640x640Q90.jpg_.webp)
 maimai pico controller
-![[assembled.jpg]]
+![[assembled.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/assembled.jpg)
 Ongeki controller
-![[Photo1.jpg]]
+![[Photo1.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Photo1.jpg)
 SDVX controller
-![[9jSMV8pepo5Ch3zH2F77fpvOJUKiAGBVY0GJRbmm.jpg]]
+![[9jSMV8pepo5Ch3zH2F77fpvOJUKiAGBVY0GJRbmm.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/9jSMV8pepo5Ch3zH2F77fpvOJUKiAGBVY0GJRbmm.jpg)
 
 >What challenges did you encounter during the video scripting and design phase, and how did you adjust your approach to overcome them? Specifically, how did you ensure your video tutorial would effectively communicate the steps and details of your recipe to a diverse audience?
 
 During the design process of the custom PCB I had numerous issues, first when I was initially designing the schematic I thought the wiring mattered so I spent quite a few hours making the connections all neat and making sure all the components were near the pins I needed on the **schematic version of the microcontroller** but to my horror after countless hours of work when I transferred my design to the PCB all the ratlines were all over the place and it was untraceable as the pin places were practically randomised compared to the actual microcontroller.
-![[Pasted image 20240323130354.png]]
-![[Pasted image 20240323130427.png]]
+![[Pasted image 20240323130354.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323130354.png)
+![[Pasted image 20240323130427.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323130427.png)
 
 I realised after I looked at the PCB I needed to completely restart the design process, at the same time I started researching to copper pours which were filled zones completely filled with copper to act as a common ground plane or a power plane, it took quite a while to figure out how to do it but I finally figured it out and that I had to make nets in the schematic and then add a filled zone in the PCB editor. My next step was to recreate the schematic again so I I built it and made sure to keep looking at the microcontroller pin diagram to make sure all the components were lined up in the PCB and not the schematic.
-![[32U4PinMapping.png]]
-![[Pasted image 20240323131047.png]]
+![[32U4PinMapping.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/32U4PinMapping.png)
+![[Pasted image 20240323131047.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323131047.png)
 (this was the design at this stage but without the 01x06 connector and resistors)
 
 I then created the PCB with relative ease as it was much easier to trace as I had figured out how to use vias to the GND plane, but I forgot one essential thing, a USB to actually connect the controller to a computer. I then had to go back to the schematic and research how to connect a USB to a microcontroller and settled on having a separate USB C PCB which are easily sourced and having a JST connector to that PCB, it wasn't too bad to add but I did have to move most components and retrace them on the PCB but then I had finally done it, with 3 reiterations of the PCB I had made the final PCB.
-![[Pasted image 20240323131738.png]]
-![[Pasted image 20240323131755.png]]
+![[Pasted image 20240323131738.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323131738.png)
+![[Pasted image 20240323131755.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323131755.png)
 
 I also had quite a few problems when initially creating the controller IRL using the Leonardo as I could only source tiny pushbuttons which had an abnormally high weight spring in them from jaycar, and also only had a very low resolution rotary encoder to use (15 PPR vs 600 PPR which is recommended).  Finding firmware which worked too was extremely hard, first I tried making it myself but couldn't get it to work, I then attempted to find existing firmware but multiple codebases didn't work but I finally found one which worked by modifying a few lines. The 3D printing process was also extremely slow as I had to print, check if it fit and then reprint if it didn't, I probably have around half a kilo of 3d printed SDVX cases and knobs lying around my house. While I was creating the controller too I decided to go in blind as I knew the general working of the controller but that turned into a dumb idea as it lead me down a bunch of small problems which took me forever to solve.
 
@@ -281,10 +281,10 @@ Unfortunately my video/recipe wasn't ready by the time the peer review came roun
 >Reflecting on the entire process, how would you reimagine or further expand this project in the future? Considering all you've learned and the feedback received, design a brief proposal for a follow-up project or an advanced version of your current recipe.
 
 In the future, especially if I knew I was making this project 2 or more months in advance then I would make a full size proper SDVX controller with a sheet metal frame and acrylic top, I'd use 600 PPR rotary encoders and a square start button from aliexpress and 60UK and samducksa 405 buttons from IST Mall which use proper microswitches, I'd also get my 2 layer PCB printed so I could use it and make the build neater.
-![[Pasted image 20240323133046.png]]
-![[Pasted image 20240323133100.png]]
-![[Pasted image 20240323133223.png]]
-![[Pasted image 20240323133329.png]]
+![[Pasted image 20240323133046.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323133046.png)
+![[Pasted image 20240323133100.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323133100.png)
+![[Pasted image 20240323133223.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323133223.png)
+![[Pasted image 20240323133329.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Pasted%20image%2020240323133329.png)
 
 My design would hopefully look and feel as premium as this controller I already own.
-![[20240314_083008.jpg]]
+![[20240314_083008.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/20240314_083008.jpg)
