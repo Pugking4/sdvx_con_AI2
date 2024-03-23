@@ -247,14 +247,23 @@ When I first started researching what project to do I initially thought "What if
 and with the current way I was going to implement it which was to move the scanner over a strip of colours until a black strip was reached would be very impractical. Then I thought of some hobbies I was passionate of and I thought of making a rhythm game controller, there were quite a few to choose from like a IIDX controller, Chunithm controller and if I wanted an extremely hard challenge, a maimai controller or Ongeki controller, but I ended up choosing one of the more simple ones as this was my first foray into designing a rhythm controller from scratch.
 
 IIDX controller
+
 ![[pic003.png]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/pic003.png)
+
 Chunithm controller
+
 ![[S991d3176dec447c79dd32a83287477ebh.jpg_640x640Q90.jpg_.webp]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/S991d3176dec447c79dd32a83287477ebh.jpg_640x640Q90.jpg_.webp)
+
 maimai pico controller
+
 ![[assembled.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/assembled.jpg)
+
 Ongeki controller
+
 ![[Photo1.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/Photo1.jpg)
+
 SDVX controller
+
 ![[9jSMV8pepo5Ch3zH2F77fpvOJUKiAGBVY0GJRbmm.jpg]](https://github.com/Pugking4/sdvx_con_AI2/blob/main/9jSMV8pepo5Ch3zH2F77fpvOJUKiAGBVY0GJRbmm.jpg)
 
 >What challenges did you encounter during the video scripting and design phase, and how did you adjust your approach to overcome them? Specifically, how did you ensure your video tutorial would effectively communicate the steps and details of your recipe to a diverse audience?
