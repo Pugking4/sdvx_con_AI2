@@ -203,6 +203,13 @@ I only built it to see if it could actually be used to play USC as I thought the
 
 ## Build custom PCB in KiCad
 > Theoretically could be used instead of a Leonardo to play USC with the current code
+
+Tutorial Links:
+
+https://youtu.be/7Y9TrZdyCdA
+
+https://youtu.be/rsyUH__au7s
+
 1. First open the KiCad Schematic Editor and add the ATmega32U4-A microcontroller using the add symbol button
 <img width="1280" alt="fig #6" src="https://github.com/Pugking4/sdvx_con_AI2/assets/24513580/381e913f-de39-4018-9505-ee0254e582cf">
 
